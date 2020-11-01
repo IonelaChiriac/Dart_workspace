@@ -1,5 +1,3 @@
-import 'package:exercises/exercises.dart' as exercises;
-
 // void main() {
 //   String name = 'Jo';
 //   int age = 36;
@@ -22,7 +20,7 @@ import 'package:exercises/exercises.dart' as exercises;
 //   height = 'Bob';
 
 // //   //height = 'Bob'; STATICALLY TYPED variable trypes defined at compile time (via type inference when using var)
-// //   //which means that height is already set double if we change it now for a string 'Bob' we will have an error
+// //   //which means that height is already set double if we change it now for a string 'Bob ' we will have an error
 // //   //it will work only with dynamyc
 // //  height = 1.90; //var = mutable - the variable can be changed
 
@@ -131,6 +129,69 @@ import 'package:exercises/exercises.dart' as exercises;
 //   print(person1);
 //   print(person2);
 // }
+// String describe({String name, int age, double height = 0.0}) {
+//   return "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
+// }
+
+// String describe2({String name, int age, double height = 0.0}) =>
+//     "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
+
+// void sayName(String name) => print("Hello, I'm $name");
+
+// String describe({String name, int age, double height = 0.0}) {
+//   return "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
+// }
+
+// String describe2({String name, int age, dString describe({String name, int age, double height = 0.0}) {
+//   return "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
+// }
+
+// String describe2({String name, int age, double height = 0.0}) =>
+//     "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
+
+// void sayName(String name) => print("Hello, I'm $name");
+// ouble height = 0.0}) =>
+// //     "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
+
+// // void sayName(String name) => print("HelloString describe({String name, int age, double height = 0.0}) {
+//   return "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
+// }
+
+// String describe2({String name, int age, double height = 0.0}) =>
+//     "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
+
+// void sayName(String name) => print("Hello, I'm $name");
+
+// //introduction to classes
+// String describe({String name, int age, doublString describe({String name, int age, double height = 0.0}) {
+//   return "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
+// }
+
+// String describe2({String name, int age, double height = 0.0}) =>
+//     "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
+
+// void sayName(String name) => print("Hello, I'm $name");
+// e height = 0.0}) {
+//   return "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
+// }
+
+// String describe2({String name, int age, double height = 0.0}) =>
+//     "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
+
+// void sayName(String name) => print("Hello, I'm $name");
+
+//Class: custom type holding variables and functions
+//Classes hold data and logic
+
+// void main() {
+//   final person = Person();
+// }
+
+// class Person {
+//   String name;
+//   int age;
+//   double height;
+// }
 
 // String describe({String name, int age, double height = 0.0}) {
 //   return "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
@@ -141,6 +202,27 @@ import 'package:exercises/exercises.dart' as exercises;
 
 // void sayName(String name) => print("Hello, I'm $name");
 
-//arrow operator --> syntactic sugar to write more concise code
+//class constructor
+void main() {
+  final person = Person(name: 'Jo', age: 36, height: 1.62);
+  print(person.name);
+}
 
-//introduction to classes
+class Person {
+  Person(
+      {this.name,
+      this.age,
+      this.height}); //constructor and mutable variables without final(it can be changed) else (recommended is inmutable it can be changed)
+  final String name;
+  final int age;
+  final double height;
+}
+
+String describe({String name, int age, double height = 0.0}) {
+  return "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
+}
+
+String describe2({String name, int age, double height = 0.0}) =>
+    "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
+
+void sayName(String name) => print("Hello, I'm $name");
