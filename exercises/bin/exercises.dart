@@ -203,26 +203,55 @@
 // void sayName(String name) => print("Hello, I'm $name");
 
 //class constructor
-void main() {
-  final person = Person(name: 'Jo', age: 36, height: 1.62);
-  print(person.name);
-}
+// void main() {
+//   final person = Person(name: 'Jo', age: 36, height: 1.62);
+//   print(person.describe());
+// }
 
-class Person {
-  Person(
-      {this.name,
-      this.age,
-      this.height}); //constructor and mutable variables without final(it can be changed) else (recommended is inmutable it can be changed)
-  final String name;
-  final int age;
-  final double height;
-}
+// class Person {
+//   Person(
+//       {this.name,
+//       this.age,
+//       this.height}); //constructor and mutable variables without final(it can be changed) else (recommended is inmutable it can be changed)
+//   final String name;
+//   final int age;
+//   final double height;
 
-String describe({String name, int age, double height = 0.0}) {
-  return "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
-}
+//   String describe() =>
+//       "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
 
-String describe2({String name, int age, double height = 0.0}) =>
-    "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
+//   void sayName() => print("Hello, I'm $name");
+// }
 
-void sayName(String name) => print("Hello, I'm $name");
+//Classes
+//functions = methods
+
+// //Inheritance exercise
+// void main() {
+//   final person = Person(name: 'Jo', age: 36, height: 1.62);
+//   print(person.describe());
+//   final employee = Employee(taxCode: 'AB12', salary: 50000);
+//   employee.sayName();
+// }
+
+// class Person {
+//   Person(
+//       {this.name,
+//       this.age,
+//       this.height}); //constructor and mutable variables without final(it can be changed) else (recommended is inmutable it can be changed)
+//   final String name;
+//   final int age;
+//   final double height;
+
+//   String describe() =>
+//       "Hello, I'm, $name. I'm $age years old, I'm $height meters tall";
+
+//   void sayName() => print("Hello, I'm $name");
+// }
+
+// //Inheritance
+// class Employee extends Person {
+//   Employee({this.taxCode, this.salary}); //constructor
+//   final String taxCode;
+//   final int salary;
+// }
