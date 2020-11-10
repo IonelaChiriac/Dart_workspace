@@ -1,4 +1,5 @@
 import 'dart:ffi';
+import 'package:IntroToFunction/IntroToFunction.dart' as IntroToFunction;
 
 main(List<String> arguments) {
   //entry point for execution
@@ -74,13 +75,14 @@ main(List<String> arguments) {
 //   print(number + numberTwo);
 // }
 
-  int number = 34;
-  int numberTwo = 2;
+  // int number = 34;
+  // int numberTwo = 2;
 
-  double pi = 3.14;
-  double gravity = 9.8;
+  // double pi = 3.14;
+  // double gravity = 9.8;
 
-  var result = number + numberTwo;
+  // //var result = number + numberTwo;
+  // var result = 4 / 2;
   //print(result);
   //print(pi + gravity);
 
@@ -105,3 +107,93 @@ main(List<String> arguments) {
 //Equality and Relational operators (==, !=, >, <, >=, <=) exercises
 //   print(pi != pi);
 // }
+
+//   if (number != 34) {
+//     print("If true, this will run!");
+//   } else {
+//     print("Else running!");
+//   }
+// }
+
+//Logical operators (!, ||, &&) exercise
+  // if (!(number != 100) || number <= 100) {
+  //   //false or true || (OR) if one is true then resilt is true
+
+  //   print("Not a hundred!");
+  // } else {
+  //   print("Yess!");
+  // }
+
+//   if (!(number != 100) && number <= 100) {
+//     //false or true && (AND)the expression is true if both sides are true
+
+//     print("Not a hundred!");
+//   } else {
+//     print("Yess!");
+//   }
+// }
+
+//for loop exercise
+  // for (var i = 0; i < 10; i++) {
+  //   print("Hello $i");
+  // }
+// }
+
+//   var fruit = "Mango";
+//   for (var i = 0; i < 10; i++) {
+//     if (i % 2 == 0) {
+//       print("$fruit $i");
+//     }
+//   }
+// }
+
+//while, do while and break in dart exercise
+//   while (true) {
+//     //infinite loop
+//     if (number >= 32) print("Going ... ");
+//     break;
+//     print("I am back!"); //dead code after break
+//   }
+// }
+
+//   do {
+//     print("Hello world");
+//   } while (number < 34);
+// }
+
+//switch cases exercise
+//   var age = 18;
+
+//   switch (age) {
+//     case 19:
+//       print("Old enough");
+//       break;
+//     case 20:
+//       print("still good");
+//       break;
+//     case 89:
+//       print("too old");
+//       break;
+//     // case 18:
+//     //   print("yess");
+//     //   break;
+
+//     default:
+//       print("Default $age");
+//   }
+// }
+
+//functions exercise
+
+  print('Hello world: ${IntroToFunction.calculate()}!');
+  doSomething();
+}
+
+doSomething() {
+  print("Hello Functions!");
+  sayMyName();
+}
+
+sayMyName() {
+  print("Jo");
+}
