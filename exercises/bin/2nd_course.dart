@@ -1,5 +1,5 @@
 import 'dart:ffi';
-import 'package:IntroToFunction/IntroToFunction.dart' as IntroToFunction;
+
 
 main(List<String> arguments) {
   //entry point for execution
@@ -183,17 +183,4 @@ main(List<String> arguments) {
 //   }
 // }
 
-//functions exercise
 
-  print('Hello world: ${IntroToFunction.calculate()}!');
-  doSomething();
-}
-
-doSomething() {
-  print("Hello Functions!");
-  sayMyName();
-}
-
-sayMyName() {
-  print("Jo");
-}
