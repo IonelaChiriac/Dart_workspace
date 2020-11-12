@@ -1,12 +1,12 @@
 //import 'package:oopexercises/oopexercises.dart' as oopexercises;
 
 //functions exercises
-main(List<String> arguments) {
-  var name = sayHello("JoJo");
-  print(name);
-}
+// main(List<String> arguments) {
+//   var name = sayHello("JoJo");
+//   print(name);
+// }
 
-String sayHello(String name) => "Hello $name";
+//String sayHello(String name) => "Hello $name";
 
 //   //print('Hello world: ${oopexercises.calculate()}!');
 
