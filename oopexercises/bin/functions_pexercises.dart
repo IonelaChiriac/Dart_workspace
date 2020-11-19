@@ -1,4 +1,4 @@
-//import 'package:oopexercises/oopexercises.dart' as oopexercises;
+import 'package:oopexercises/oopexercises.dart' as oopexercises;
 
 //functions exercises
 // main(List<String> arguments) {
@@ -58,3 +58,25 @@
 //     print("Nay!");
 //   }
 // }
+
+//https://dartpad.dartlang.org/
+
+// void main() {
+//   int step1Result = add(n1: 5, n2: 9);
+
+//   int step2Result = multiply(step1Result, 5);
+
+//   double finalResult = step2Result / 3;
+//   print(finalResult);
+// }
+
+// int add({int n1, int n2}) {
+//   return n1 + n2;
+// }
+
+// int multiply(int n3, int n4) {
+//   return n3 * n4;
+// }
+
+// // OUTPUT
+// //23.333333333333332
